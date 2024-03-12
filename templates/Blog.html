@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blog  |</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+
+    </head>
+    <body style="margin:10px 10px 10px 30px">
+        <center><h1 style="color:green"><b>MY BLOG</b> </h1></center>
+        <hr size="5px" color="#FF00FF" />
+     {% for item in blogs  %}
+     
+     <img style="width:500px" src="{{item.image.url}}" alt='img' >
+     <p><b>Title:</b>{{item.title}}</P>
+     <i> <b>Descprition:</b>{{item.description}}</p>
+     <b>Posted:{{item.date}}</b>
+     <hr/>
+     
+     
+     
+     {% endfor %}
+        
+        <script src="" async defer></script>
+    </body>
+</html>
